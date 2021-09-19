@@ -21,9 +21,9 @@ Esta carpeta contiene los ficheros con las observaciones de la velocidad residua
 Ambos contienen las observaciones de los residuales de la velocidad del viento entre 2013 y 2016.
 
 # Código R
-R code to fit with INLA (http://www.r-inla.org/) the spatio-temporal models considered in the data analysis section of the present paper, and code to reproduce all the figures and tables. All the R files are written by the authors of the paper using R version 4.0.3 (2020-10-10).
+El código de R correspondiente al análisis, se divide en tres carpetas principales.
 
-- [**DataAnalysis_INLA.R**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/DataAnalysis_INLA.R)
+- [**ARMA**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/ARMA)
 
   This R script contains the necessary functions to replicate with INLA the fit of the spatio-temporal models considered in the data analysis section of the paper. The code can be used with any other data sets with similar structure.
   
