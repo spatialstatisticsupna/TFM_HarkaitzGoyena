@@ -14,22 +14,11 @@ temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja y dirigido 
 
 Esta carpeta contiene los ficheros con las observaciones de la velocidad residual del viento para las dos localizaciones de Arabia Saudí analizadas. Los cuales se han obtenido de (https://repository.kaust.edu.sa/handle/10754/667127)
 
-- [**Wind_res73.rds**]
+- [**Wind_res73.rds**]https://github.com/spatialstatisticsupna/TFM_HarkaitzGoyena/blob/main/Datos/Wind_res73.rds
   
-- [**Wind_res2137.rds**]
+- [**Wind_res2137.rds**](https://github.com/spatialstatisticsupna/TFM_HarkaitzGoyena/blob/main/Datos/Wind_res2137.rds)
 
 Ambos contienen las observaciones de los residuales de la velocidad del viento entre 2013 y 2016.
-
-
-- [**Uttar_Pradesh_nb.graph**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/data/Uttar_Pradesh_nb.graph)
-  
-  An inla.graph object with the spatial neighborhood structure of the 70 districts of Uttar Pradesh.
-
-
-- [**carto_up.shp**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/data/carto_up/)
-
-  Shapefile containing the cartography of the 70 districts of Uttar Pradesh.
-
 
 # Código R
 R code to fit with INLA (http://www.r-inla.org/) the spatio-temporal models considered in the data analysis section of the present paper, and code to reproduce all the figures and tables. All the R files are written by the authors of the paper using R version 4.0.3 (2020-10-10).
