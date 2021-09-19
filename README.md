@@ -1,5 +1,5 @@
 # TFM_HarkaitzGoyena
-Este repositoriio contiene el código R utilizado en la experimentación para el Trabajo de Fin de Máster _"Predicciones a corto plazo en series
+Este repositorio contiene el código R utilizado en la experimentación para el Trabajo de Fin de Máster _"Predicciones a corto plazo en series
 temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja y dirigido por Aritz Adin y Guzmán Santafé. Además de las funciones necesarias para generar las gráficas de dicho trabajo.
 
 
@@ -7,8 +7,6 @@ temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja y dirigido 
 
 - [Datos](#Datos)
 - [Código R](#CódigoR)
-- [References](#References)
-
 
 # Datos
 
@@ -27,32 +25,8 @@ El código de R correspondiente al análisis, se divide en dos carpetas principa
 
   Esta carpeta contiene el script con el análisis realizado en R, además de la función utilizada para generar automáticamente las predicciones para todos los valores de la serie de test.
   
-- [**Figures_and_Tables.R**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/Figures_and_Tables.R)
- 
- 
-  This R script contains the necessary functions to reproduce all the figures and tables of the data analysis section of the present paper. The fitted models with INLA and PQL can be download from [DataAnalysis_INLA.Rdata](https://emi-sstcdapp.unavarra.es/Confounding_article/data/DataAnalysis_INLA.Rdata) and [DataAnalysis_PQL.Rdata](https://emi-sstcdapp.unavarra.es/Confounding_article/data/DataAnalysis_PQL.Rdata), respectively.
+- [**NN**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/NN)
 
-### Dealing with large datasets
-When the number of small areas (denoted as S) and/or time periods (denoted as T) is large, fitting restricted regression models with INLA could be computationally very demanding due to the large and dense design matrices of the spatial, temporal and spatio-temporal random effects. The [**following code**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/DataAnalysis_INLA_fast.R) should be used in those cases where the posterior distributions of the fixed effects for the restricted regression models are estimated as a linear combination of the log-risks and the random effects of the models without accounting for confounding using the `INLA::inla.make.lincombs()` function.
-
-
-Note that if we write the spatial model without accounting for confounding as
-
-log(r)=X&beta; + &xi;
-
-and the spatial restricted regression model as
-
-log(r)=X&beta;<sup>*</sup> + W<sup>-1/2</sup>LL&prime;W<sup>-1/2</sup>&xi;
-
-the vector of fixed effects &beta;<sup>*</sup> can be computed using the following expression:
-
-&beta;<sup>*</sup> = (X<sup>t</sup>X)<sup>-1</sup>X<sup>t</sup>[log(r)-W<sup>-1/2</sup>LL&prime;W<sup>-1/2</sup>&xi;]
-
-A similar approach is used to estimate the restricted regression spatio-temporal model described in Adin et al. (2021).
-
-
-# Acknowledgements
-This work has been supported by the Spanish Ministry of Economy, Industry, and Competitiveness (project MTM2017-82553-R, AEI/FEDER, UE), and partially funded by la Caixa Foundation (ID 1000010434), Caja Navarra Foundation and UNED Pamplona, under agreement LCF/PR/PR15/51100007.
-
-# References
-[Adin, A., Goicoa, T., Hodges, J.S., Schnell, P., and Ugarte, M.D. (2021). Alleviating confounding in spatio-temporal areal models with an application on crimes against women in India. _Statistical Modelling (online first)_. DOI: 10.1177/1471082X211015452](https://journals.sagepub.com/doi/full/10.1177/1471082X211015452)
+  Esta carpeta contiene scripts para entrenar y predecir con los distintos modelos de redes neuronales, además de funciones para seleccionar y generar los intervalos de predicción para éstas.
+  
+  Además, esta carpeta contiene el script [graphs.R](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/graphs.R), que contiene las órdenes utilizadas para generar las gráficas correspondientes a la representación de los datos.
