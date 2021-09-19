@@ -21,11 +21,11 @@ Esta carpeta contiene los ficheros con las observaciones de la velocidad residua
 Ambos contienen las observaciones de los residuales de la velocidad del viento entre 2013 y 2016.
 
 # Código R
-El código de R correspondiente al análisis, se divide en tres carpetas principales.
+El código de R correspondiente al análisis, se divide en dos carpetas principales.
 
 - [**ARMA**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/ARMA)
 
-  This R script contains the necessary functions to replicate with INLA the fit of the spatio-temporal models considered in the data analysis section of the paper. The code can be used with any other data sets with similar structure.
+  Esta carpeta contiene el script con el análisis realizado en R, además de la función utilizada para generar automáticamente las predicciones para todos los valores de la serie de test.
   
 - [**Figures_and_Tables.R**](https://github.com/spatialstatisticsupna/Confounding_article/blob/master/R/Figures_and_Tables.R)
  
