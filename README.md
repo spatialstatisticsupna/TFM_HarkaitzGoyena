@@ -23,10 +23,10 @@ El código de R correspondiente al análisis, se divide en dos carpetas principa
 
 - [**ARMA**](https://github.com/spatialstatisticsupna/TFM_HarkaitzGoyena/blob/main/R/ARMA)
 
-  Esta carpeta contiene el script con el análisis realizado en R, además de la función utilizada para generar automáticamente las predicciones para todos los valores de la serie de test.
+  Esta carpeta contiene el script con el análisis realizado en R (*arma_tfm.R*), además de la función utilizada para generar automáticamente las predicciones para todos los valores de la serie de test (*forecast_arma.R*).
   
 - [**NN**](https://github.com/spatialstatisticsupna/TFM_HarkaitzGoyena/blob/main/R/NN)
 
-  Esta carpeta contiene scripts para entrenar y predecir con los distintos modelos de redes neuronales, además de funciones para seleccionar y generar los intervalos de predicción para éstas.
+  Esta carpeta contiene scripts para entrenar y predecir con los distintos modelos de redes neuronales, además de funciones para seleccionar y generar los intervalos de predicción para éstas. Los scripts *nn_tfm_osh.R* y *nn_tfm_mf.R* corresponden al entrenamiento y predicción con modelos de redes neuronales de una capa oculta únicamente con las fecuencias significativas y añadiendo información de los 7 periodos anteriores a las frecuencias significativas, respectivamente. Los scripts *MLPml_73_mf.R* y *MLPml_2137_mf.R* corresponden a las redes multicapa entrenadas añadiendo información de los 7 periodos anteriores a las frecuencias significativas para las localizaciones 73 y 2137, respectivamente. El fichero *nn_funct.R* contiene las funciones para seleccionar el valor de &sigma; para el método DPC junto a la generación de los intervalos de predicciçon en test para dicho &sigma;.
   
   Además, esta carpeta contiene el script [graphs.R](https://github.com/spatialstatisticsupna/TFM_HarkaitzGoyena/blob/main/R/graphs.r), que contiene las órdenes utilizadas para generar las gráficas correspondientes a la representación de los datos.
