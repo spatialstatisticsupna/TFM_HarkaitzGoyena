@@ -10,7 +10,7 @@ temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja y dirigido 
 
 # Datos
 
-Esta carpeta contiene los ficheros con las observaciones de la velocidad residual del viento para las dos localizaciones de Arabia Saudí analizadas. Los cuales se han obtenido de (https://repository.kaust.edu.sa/handle/10754/667127)
+Esta carpeta contiene los ficheros con las observaciones de la velocidad residual del viento para las dos localizaciones de Arabia Saudí analizadas. Los cuales se han obtenido del fichero *wind_residual.nc* de https://repository.kaust.edu.sa/handle/10754/667127.
 
 - [**Wind_res73.rds**](https://github.com/spatialstatisticsupna/TFM_HarkaitzGoyena/blob/main/Datos/Wind_res73.rds)
   
