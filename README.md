@@ -1,6 +1,6 @@
 # TFM_HarkaitzGoyena
 Este repositorio contiene el código R utilizado en la experimentación para el Trabajo de Fin de Máster _"Predicciones a corto plazo en series
-temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja (bajo la supervisión de Aritz Adin y Guzmán Santafé) en el [Máster de Modelización e Investigación Matemática, Estadística y Computación](https://www.unavarra.es/sites/masteres/ciencias/modelizacion-invest-matematica/presentacion.html).
+temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja (bajo la supervisión de Aritz Adin y Guzmán Santafé) en el [Máster de Modelización e Investigación Matemática, Estadística y Computación](https://www.unavarra.es/sites/masteres/ciencias/modelizacion-invest-matematica/presentacion.html) de la Universidad Pública de Navarra.
 
 
 ## Índice
