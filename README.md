@@ -6,7 +6,7 @@ temporales de alta frecuencia"_ realizado por Harkaitz Goyena Baroja y dirigido 
 ## Índice
 
 - [Datos](#Datos)
-- [Código](#Código) R
+- [Código R](#código-r)
 
 # Datos
 
